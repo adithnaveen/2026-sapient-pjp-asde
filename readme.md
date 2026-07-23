@@ -66,3 +66,27 @@
       - 
     - what are the features it should have
     - 
+
+
+# day2 
+
+## working with git commands 
+
+### Configuration 
+  - git config --global  user.name "meet borisagar"
+  - git config --global user.email "your email id registered with github"
+  - git config --global --edit 
+  - git config --list 
+- System - for the system 
+- Global - for user 
+- Local - for the folder 
+
+
+### few comamnds to be explores 
+  - git reset 
+  - git revert
+  - git rebase
+  - git stash
+  - git log 
+  - git log --graph 
+  - git remote -v
