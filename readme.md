@@ -88,5 +88,10 @@
   - git rebase
   - git stash
   - git log 
-  - git log --graph 
+  - git log --graph  --oneline 
   - git remote -v
+
+## day 3 
+  - we may have to have connectors for db, external tools like spring, kafka, aws system, logging frameworks... 
+
+
