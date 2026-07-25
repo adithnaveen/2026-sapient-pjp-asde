@@ -9,10 +9,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ServiceTest {
     BusinessLogic businessLogic;
+
     @BeforeEach
     void setUp() {
          businessLogic = new BusinessLogic();
-
     }
 
     @Test
@@ -26,6 +26,13 @@ public class ServiceTest {
         int result = businessLogic.add(0,0 );
         assertEquals(0, result);
 
+    }
+
+    @Test
+    void testSalaryLow_validCase() {
+        String result = businessLogic.greeting("Naveen", 100);
+
+        assertEquals("low", result);
     }
 
 }

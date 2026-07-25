@@ -92,6 +92,22 @@
   - git remote -v
 
 ## day 3 
-  - we may have to have connectors for db, external tools like spring, kafka, aws system, logging frameworks... 
+  - we may have to have connectors for db, external tools like spring, kafka, aws system, logging frameworks 
+    - programming language was created 
+      - kotlin 
+      - groovy 
+      - ruby 
+      - R 
+      - scala 
 
+## Day 4
+
+  -  Product Engineering mindset: the 'why' before the 'how'
+  -  Design Thinking: Empathize, Define, Ideate, Prototype, Test
+  -  Problem-solving frameworks: 5 Whys, Fishbone / Root Cause Analysis
+  -  Critical thinking principles and common cognitive biases
+  -  Structured problem decomposition and analytical thinking
+  -  Decision matrices and prioritization frameworks
+  -  Requirements analysis: functional vs non-functional"
+  
 
