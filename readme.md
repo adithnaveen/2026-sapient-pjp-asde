@@ -103,7 +103,56 @@
 ## Day 4
 
   -  Product Engineering mindset: the 'why' before the 'how'
+     -   2 + 2 =
+
+
+``     -   i want to develop a calculator application 
+          - Why  we need to develop the application 
+          - what problem does it solve 
+          - who will use this application 
+          - 
+
+``
+
+```
+  - help me develop a mobile application for employee attendance + leaves tracking 
+      - why we need a application 
+      - why - should be able to track attendance 
+      - why -  to know whether the employee is present or not
+      - why - so that the sessions can be conducted 
+      - why - to prepare them for boot camp 
+      - why - there is a project demand from the client 
+      - why - there is real prblem in the industry to be solved 
+      - why - to mak like easier and efficient 
+
+  Developer 
+    - should i user android or ios or both
+    - java or kotlin  
+    - what database to use it 
+    - what cloud to use it 
+
+  Product Engineer 
+    - why do you need mobile application 
+    - what problems i'm i solving 
+    - how will i approve leaves to absentees - how it is done today - i'm using excel sheet 
+    - for only levaes management good to have mobile app 
+
+```
+
+
+```
   -  Design Thinking: Empathize, Define, Ideate, Prototype, Test
+    - Domain - public transport 
+    - Problem - bus is getting delayed 
+    - Solution - 
+      - Empathize -  driver (cause of delay - there was a punchure, yesterday also delayed - yesterday also puncher),
+           conductor, state transport officer, 
+      - Define - 
+      - Ideate 
+      - Prototype
+      - Test 
+
+```
   -  Problem-solving frameworks: 5 Whys, Fishbone / Root Cause Analysis
   -  Critical thinking principles and common cognitive biases
   -  Structured problem decomposition and analytical thinking
