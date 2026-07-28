@@ -123,7 +123,7 @@
       - why - to prepare them for boot camp 
       - why - there is a project demand from the client 
       - why - there is real prblem in the industry to be solved 
-      - why - to mak like easier and efficient 
+      - why - to make life easier and efficient 
 
   Developer 
     - should i user android or ios or both
@@ -160,3 +160,27 @@
   -  Requirements analysis: functional vs non-functional"
   
 
+
+# Day 5 
+
+  ## Login Feature 
+    - Front end - 
+      ```
+        Given the application is working on http://localhost:3000 
+        When the user goes to home screen 
+        Then on top right corner in green color there should be a button labelled "Login" 
+        When clikced on Login button
+        Then the pop up should come 
+        And the screen contains two fields username and password 
+        And when user enter basic validation shall happen like email and spl chars for password 
+        Then submit button to be enabled 
+
+      ```
+    - Backend 
+    - NFR 
+    - Usability 
+    - DOD & DOR 
+
+- quick work breakout room 
+  - Calculator Example 
+    - Categories People · Process · Technology · Data · Environment · Measurement

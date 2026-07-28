@@ -34,5 +34,4 @@ public class ServiceTest {
 
         assertEquals("low", result);
     }
-
 }
