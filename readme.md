@@ -184,3 +184,94 @@
 - quick work breakout room 
   - Calculator Example 
     - Categories People · Process · Technology · Data · Environment · Measurement
+
+
+
+
+# DAY 6 
+  - discussion time was not good for discussion 
+  - FR v/s NFR 
+  - Given(pre condition) When(actuals) Then (post condition) - And But Not  
+
+### disucssion to build user stories 
+  - deploying the code with CI/CD pipelines 
+  - uptime of the site 99.99 
+  - handle client request of ~5000 at a time 
+  - PII handling 
+- ```
+  Given the customer registration API is up 
+  When the customer sends the details 
+      {
+        custName:String, 
+        custPhone: String,
+        address: {
+          hno:Integer, 
+          street: String, 
+          city:String, 
+          state:String
+        }, 
+        mobile: integer, 
+        email: integer
+      }
+  Then the PII data should be handled i.e., mobile number should not be saved as is 
+  And the mobile data information should be encrypted with AES-256 
+  And only last 4 digits to be shown 
+  And for email id PII data - first character and last char of the email and first char after@ and last char after . to be shown 
+```
+  - compatability on different devices (AWD)
+  - handling user experience with different devices 
+  - unit test cases 
+  - integration testing 
+  - validating the code coverage 
+  - coding principles 
+  - system + application -  hardering
+  - password vault 
+
+  - create a website 
+  - sign up and login 
+  - most frequently buy items to be shown 
+  - the ease of adding a product to cart and place order 
+  - items which are repeatedly used 
+  - payment gateway (card / UPI / COD)
+  - product notification when not available or newly launch 
+  - feedback for the purchases done 
+
+
+  ### Task for calculator - 30 mins 
+    - team of 2 
+    - 5 why's of calculator 
+    - User Story 2 FR / 2 NFR 
+    - For calcuator - which data structures to be used LIST / SET / MAP 
+
+
+
+# Day 7 
+
+
+  ## Ways of Development 
+    - BDD - Behaviour Driven Development  Given When Then 
+    - MDD - MOdel Driven Development - figma, 
+    - DDD - Domain Driven Development - domain knowledge, domain experts, domain model, domain events, domain services, domain driven design 
+    - TDD - Test Driven Development - write test cases first and then write code to pass the test cases 
+    - SDD - Specification Driven Development - write specification first and then write code to pass the specification 
+
+
+### java discussion 
+
+```
+
+  #define hello main 
+  int hello() {
+    printf("Hello World");
+    return 0; 
+  }
+
+
+  void main() {
+    printf("Hello World");
+  }
+```
+
+
+-- WORM - Write One Read Many 
+-- Loosely Coupled - High Cohesive system, not tightly coupled, so that if one module is changed it should not impact other modules
