@@ -275,3 +275,14 @@
 
 -- WORM - Write One Read Many 
 -- Loosely Coupled - High Cohesive system, not tightly coupled, so that if one module is changed it should not impact other modules
+-- ```
+  class Customer {} -> 
+
+
+      class Customer extends Object{
+        public Customer(){
+          super();
+        }
+      }
+  Customer c = new Customer(); 
+```
