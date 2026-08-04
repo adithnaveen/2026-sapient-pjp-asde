@@ -286,3 +286,15 @@
       }
   Customer c = new Customer(); 
 ```
+#
+
+
+# Day 8 
+
+## java concepts 
+  - Java Records 
+  - Sealed Classes
+  - final class 
+  - enhanced for-each
+  - enhanced switch statement with lambda 
+  - 

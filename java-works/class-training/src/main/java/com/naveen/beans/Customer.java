@@ -3,6 +3,7 @@ package com.naveen.beans;
 class Customer {
     private int custId;
     private double income;
+
     private Name name;
 
     public Name getName() {
@@ -37,9 +38,8 @@ class Customer {
     public String toString() {
         return "Customer{" +
                 "custId=" + custId +
-                ", custFirstName='" + custFirstName + '\'' +
-                ", custLastName='" + custLastName + '\'' +
                 ", income=" + income +
+                ", name=" + name +
                 '}';
     }
 }
