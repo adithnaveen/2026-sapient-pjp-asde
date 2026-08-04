@@ -297,4 +297,31 @@
   - final class 
   - enhanced for-each
   - enhanced switch statement with lambda 
+  - ```
+        switch(value) {
+          case 1 : 
+            System.out.println("1");
+            break;
+          case 2 :
+            System.out.println("2");
+            break;
+          default :
+            System.out.println("default");
+            return ;
+        }
+  
+      switch(value) {
+        case 1 -> System.out.println("1");
+        case 2 -> System.out.println("2");
+        default -> {
+          System.out.println("default");
+          return ;
+        }
+      }
+
+  ```
+
+  - condition for Engineer - Tech Person, Manager - Growing Leader, Director - Leadership  
+
   - instance off 
+  - Wrapper classes, autoboxing/unboxing

@@ -8,8 +8,6 @@ import org.slf4j.LoggerFactory;
 //class Circle extends  Shape {}
 
 
-
-
 abstract class Device {
     private static final Logger log = LoggerFactory.getLogger(Device.class);
 
