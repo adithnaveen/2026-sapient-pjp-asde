@@ -3,8 +3,14 @@ package com.naveen.oops;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+// if the class is declared as final it cannot be inherited
+//class final Shape {}
+//class Circle extends  Shape {}
 
-abstract class  Device {
+
+
+
+abstract class Device {
     private static final Logger log = LoggerFactory.getLogger(Device.class);
 
     abstract void on();
@@ -32,6 +38,7 @@ public class FinalSealedRecord {
         if(d instanceof  Monitor) {
             ((Monitor) d).resolution();
         }
+
 
         // the super class can always hold ref of subclass without casting
         d.on();
@@ -71,5 +78,10 @@ public class FinalSealedRecord {
                 log.info("--------------------");
             }
 
+
+            // working with records
+
+        Name name = new Name("Naveen", "Kumar");
+        log.info("FName " + name.fName() +", LName " + name.lName());
     }
 }
