@@ -19,6 +19,8 @@ public class ExceptionEx1 {
 
             int result = num1 / num2;
             System.out.println("Result " + result);
+
+            // exception should be at last
         }catch(ArithmeticException ae) {
             log.info("Arithmetic Exception occurred due to  {0}", ae);
         } catch (NumberFormatException nfe) {
