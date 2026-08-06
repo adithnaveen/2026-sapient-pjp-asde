@@ -26,9 +26,12 @@ public class Utils {
 
     }
 
-    public static void  fileIncomeTax(Data data) throws NameTooSmallException {
+    public static void  fileIncomeTax(Data data) throws NameTooSmallException, SalaryTooLessException {
         if(data.name().length()<6) {
              throw new NameTooSmallException("Name : " + data.name());
+        }
+        if(data.salary()<20000) {
+            throw new SalaryTooLessException("Salary is Low : " + data.salary());
         }
     }
 

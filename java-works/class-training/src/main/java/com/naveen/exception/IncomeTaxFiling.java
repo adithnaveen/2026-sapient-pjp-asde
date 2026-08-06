@@ -15,6 +15,9 @@ public class IncomeTaxFiling {
         }catch(NameTooSmallException ntse) {
             log.info(ntse.toString());
         }
+        catch(SalaryTooLessException stle){
+            log.info(stle.toString());
+        }
      }
 
 }
