@@ -295,8 +295,10 @@
   - Java Records 
   - Sealed Classes
   - final class 
+  - abstract class - generalization 
   - enhanced for-each
-  - enhanced switch statement with lambda 
+  
+  - enhanced switch statement with lambda (always return the value) 
   - ```
         switch(value) {
           case 1 : 
@@ -310,7 +312,7 @@
             return ;
         }
   
-      switch(value) {
+       var returnValue = switch(value) {
         case 1 -> System.out.println("1");
         case 2 -> System.out.println("2");
         default -> {
@@ -325,3 +327,33 @@
 
   - instance off 
   - Wrapper classes, autoboxing/unboxing
+
+
+
+# Day 9 - 06-aug-2026 
+
+  - exception handling
+    - probably an error during runtime 
+    - it does not stop the execution 
+      ```
+      {
+        business logic 
+      }
+       {   surround by catchers 
+          surround by catchers 
+          surround by catchers 
+          surround by catchers 
+          surround by catchers 
+          surround by catchers 
+          Exception }
+      ```
+
+      - {10/0 } {catch} -rest of the code is executed 
+  - String: immutability, string pool, key methods; StringBuilder vs String
+  - Scanner for console input; 
+  - Math class; 
+  - printf / String.format
+
+  ### for bi-weekly assessment 
+    - https://github.com/<yourname>/your-repo-name 
+    - branch-name (assessment-1, assessment-2, assessment-3, assessment-4)
