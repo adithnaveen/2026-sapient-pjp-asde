@@ -1,5 +1,6 @@
 package com.naveen.stringworks;
 
+// formatting the string, integer, float
 public class Formatting {
     public static void main(String[] args) {
         String name = "Vineeth";
