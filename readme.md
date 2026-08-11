@@ -356,4 +356,77 @@
 
   ### for bi-weekly assessment 
     - https://github.com/<yourname>/your-repo-name 
-    - branch-name (assessment-1, assessment-2, assessment-3, assessment-4)
+    - branch-name (assessment-1, assessment-2, assessment-3, assessment-4)   
+
+
+
+
+# Day 10 - 3 hours - 08-aug2-2026 
+
+
+- We did group work for PR 
+- Worked on String and String buffer 
+- Worked on string formatter 
+- Created a java doc with comments 
+- created doc to submit the capstone project 
+
+
+# Day 11 - 11-aug-2026 
+
+-  Class anatomy: fields, methods, constructors
+-  Access Specifiers: public, private, protected, package-private
+-  Object creation (new); reference variables vs object identity
+-  this keyword; constructor chaining with this()
+-  static: fields, methods, static initializer blocks
+
+## types of memory in java 
+  - Heap Memory - System.runtime.gc(); (this code clears the memory but dont use, which is expandable and shrinkable, new)
+  - stack memory
+  - local memory
+
+  - static stack memory 
+  - static local memory
+  - static heap memory
+```
+  package com.sapient; 
+
+  class Name {
+    private String fName;  
+    private String lName;
+  }
+
+  class MyClass {
+    private int variable1; 
+    private String variable2;
+    private Name name; 
+
+    stati void myStaticMethod() {
+      // some work 
+    }
+
+    void someMethod () {
+      int localVariable; 
+      // some work 
+    }
+  }
+  
+  class MainClass  {
+    public static void main(String[] args) {
+      MyClass myClass = new MyClass(); -- heap memory
+      myClass.someMethod(); -- stack memory
+      int a; - local memory 
+    }
+  }
+
+
+``
+ 
+- access specifierrs 
+```
+  class MyClass {
+    public int pp; 
+    private int pv;
+    protected int pr;
+    int pd; 
+  }
+```
