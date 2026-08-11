@@ -374,8 +374,8 @@
 # Day 11 - 11-aug-2026 
 
 -  Class anatomy: fields, methods, constructors
--  Access Specifiers: public, private, protected, package-private
--  Object creation (new); reference variables vs object identity
+-  Access Specifiers: public, private, protected, (package-private / default )
+-  Object creation (new); reference variables vs object identity (shall have when the object is created and referenced )
 -  this keyword; constructor chaining with this()
 -  static: fields, methods, static initializer blocks
 
@@ -430,3 +430,42 @@
     int pd; 
   }
 ```
+
+
+### implementing super(chaining) and this  
+
+  - vehicle 
+    - move 
+   
+    - FourWheeler 
+      - move
+      - tank capacity
+
+        - car 
+          - move
+          - tank capacity
+          - air-conditioning
+
+            - bmw 
+              - move
+              - tank capacity
+              - air-conditioning
+              - power steering
+              - airbags 
+               
+            - toyota 
+              - move
+              - tank capacity
+              - air-conditioning
+              - music-system 
+
+    - TwoWheeler 
+      - move
+
+```
+  Vehicle vehicle = new Vehicle(); (not possible and you should not create, we can only have the reference of the vehicle class ) x
+  Vehicle v; 
+  v = new BMW(); (makes sense)
+```
+
+- please help idntify the attributes in the BMW, toyota, car, vehicle classess and build similar scenario for 2 wheeler class and its subclasses
