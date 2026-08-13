@@ -128,7 +128,7 @@ public class MyClassChaining {
         v2.move();
 
         log.info("----- Ather ------- ");
-        // Vehicle reference pointing to SportsBike object
+        // Vehicle reference pointing to Ather object
         Vehicle v3 = new Ather("Bike(Ather)", true, 220,"red");
         v3.move();
 
