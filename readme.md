@@ -469,3 +469,22 @@
 ```
 
 - please help idntify the attributes in the BMW, toyota, car, vehicle classess and build similar scenario for 2 wheeler class and its subclasses
+
+
+# Day 12 - 12-aug-2026
+
+  ## type parameters or element 
+    - int x; (wrong)
+    - List list = new List();  (wrong) - raw type 
+      - List<String> list = new List<String>(); (right) 
+      - List<Integer> list = new List<Integer>(); (right)
+      - List<Double> list = new List<Double>(); (right)
+      - List<Vehicle> list = new List<Vehicle>(); (right)
+    - Map<K,V> map = new HashMap<K,V>(); (right)
+
+
+## formatting 
+
+  - mvn -Pquality com.spotify.fmt:fmt-maven-plugin:format
+  - mvn -Pquality -DskipTests verify
+  - mvn -Pquality checkstyle:checkstyle - to give html report 

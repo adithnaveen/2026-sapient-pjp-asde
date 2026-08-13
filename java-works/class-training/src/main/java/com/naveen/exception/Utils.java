@@ -8,10 +8,20 @@ import java.util.Scanner;
 public class Utils {
 
 
+    public static final int MAX_AMOUNT = 300000;
     private static final Logger log = LoggerFactory.getLogger(Utils.class);
 
     public static Data acceptData() {
 
+
+        // dummy code
+
+        int amount=0;
+        if (amount > MAX_AMOUNT) {
+            System.out.println("hi");
+        }else {
+            System.out.println("bye");
+        }
         Scanner sc = new Scanner(System.in);
         log.info("Enter Your Name : ");
         String name = sc.nextLine();
