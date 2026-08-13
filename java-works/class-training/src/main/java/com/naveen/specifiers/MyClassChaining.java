@@ -7,10 +7,12 @@ class Vehicle {
     public String vehicleType;
 
     public Vehicle (String vehicleType){
+
         this.vehicleType = vehicleType;
     }
 
     public void move(){
+
         System.out.println("Vehicle " + vehicleType + " moving...");
     }
 
@@ -101,6 +103,12 @@ class Ather extends ElectricBike {
     public Ather(String vehicleType,boolean hasSelfStart, double maxRange, String colour){
         super(vehicleType, hasSelfStart,maxRange);
         this.colour = colour;
+    }
+
+
+
+    public void move(){
+        System.out.println("Vehicle " + vehicleType + " moving... from Ather");
     }
 }
 
