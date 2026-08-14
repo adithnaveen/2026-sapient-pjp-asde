@@ -485,6 +485,29 @@
 
 ## formatting 
 
-  - mvn -Pquality com.spotify.fmt:fmt-maven-plugin:format
-  - mvn -Pquality -DskipTests verify
   - mvn -Pquality checkstyle:checkstyle - to give html report 
+
+  - mvn 
+   
+
+# Day 13 - 13-aug-2026
+  -  static: fields, methods, static initializer blocks
+-  
+```
+  class Account {
+    private int accountNo;
+    private String fName; 
+    private String aadharCardNo; 
+    private String panCardNo;
+    .... 
+  }
+
+  Account anshAccount = new Account(); 
+  Account naveenAccount = new Account(); 
+
+
+```
+  -  static factory methods
+  -  var type inference
+  -  Nested classes: static nested vs inner
+

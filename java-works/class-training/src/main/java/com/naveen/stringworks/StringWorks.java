@@ -42,7 +42,7 @@ public class StringWorks {
 
 
         StringBuilder builder = new StringBuilder();
-        for(int i= 0; i<100; i++) {
+        for (int i= 0; i<100; i++) {
             builder.append("Content SB ").append(i).append(",");
             System.out.println(builder.hashCode());
         }
