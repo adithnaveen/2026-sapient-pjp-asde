@@ -20,7 +20,6 @@ class User {
         return new User(name, 18);
     }
 
-
     @Override
     public String toString() {
         return "User{" +
