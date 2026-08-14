@@ -492,7 +492,7 @@
 
 # Day 13 - 13-aug-2026
   -  static: fields, methods, static initializer blocks
--  
+  -  if the class has static methods then all the static methods are loaded first, then at last main method is loaded 
 ```
   class Account {
     private int accountNo;
