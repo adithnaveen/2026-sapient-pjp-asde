@@ -38,6 +38,9 @@ class GPay extends Payment implements  PaymentGateWay{
 
 public class InterfaceExample {
     public static void main(String[] args) {
+        Payment payment = new PhonePe("upi");
+        payment.pay();
+        ((PaymentGateWay)payment).charges();
 
     }
 }
