@@ -511,3 +511,13 @@
   -  var type inference
   -  Nested classes: static nested vs inner
 
+
+# Day 14 -  18-Aug-2026 
+
+  - Polymorphism
+    - compile-time (overloading) - if you have same method with different parameters then it is compile time polymorphism, the compiler will decide which method to call based on the parameters passed, happens in single class 
+    - runtime (dynamic method dispatch) - if you have same method with same parameters but different implementation in different classes then it is runtime polymorphism, the compiler will decide which method to call based on the object type at runtime, happens in different classes 
+
+  ### abstract class  
+    - in java you cannot have multiple inheritance, but you can have multiple interfaces, so if you want to achieve multiple inheritance then you can use abstract class and interface together
+    - classes in java inherit from object class but interfaces does not inherit from object class
