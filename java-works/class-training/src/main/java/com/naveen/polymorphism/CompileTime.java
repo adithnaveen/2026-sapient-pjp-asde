@@ -38,6 +38,9 @@ public class CompileTime {
         }
     }
 
+    public static void display(String str1, String str2 ) {
+        System.out.println("called with 2 string params " + str1 +", "+ str2);
+    }
 
     public static void main(String[] args) {
         display();
@@ -49,5 +52,6 @@ public class CompileTime {
         display("suv");
 
         display("suv",  "BMW X3", "Hyundai Venue", "Volvo XC90" );
+        display("suv",  "BMW X3");
     }
 }
