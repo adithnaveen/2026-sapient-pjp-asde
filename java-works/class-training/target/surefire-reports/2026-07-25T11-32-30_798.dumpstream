@@ -1,5 +1,0 @@
-# Created at 2026-07-25T11:32:31.194
-Boot Manifest-JAR contains absolute paths in classpath 'D:\vs-code-workspaces\sapinet\2026-sapient-pjp-asde\java-works\class-training\target\test-classes'
-Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
-'other' has different root
-
