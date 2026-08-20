@@ -4,9 +4,15 @@ import java.util.Comparator;
 
 // is only contracts
 interface PaymentGateWay {
-    public void charges(); // by default it is abstract
+    public void charges(); // by default, it is abstract
     public default void instructions() {
+        logs();
         System.out.println("Every time there is terms and condition.. ");
+        logs();
+    }
+
+    private void logs() {
+        System.out.println("Logging every action... ");
     }
 
     public static void publicAPI() {
@@ -59,5 +65,6 @@ public class InterfaceExample {
 
 
         PaymentGateWay.publicAPI();
+
     }
 }

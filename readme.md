@@ -516,8 +516,156 @@
 
   - Polymorphism
     - compile-time (overloading) - if you have same method with different parameters then it is compile time polymorphism, the compiler will decide which method to call based on the parameters passed, happens in single class 
-    - runtime (dynamic method dispatch) - if you have same method with same parameters but different implementation in different classes then it is runtime polymorphism, the compiler will decide which method to call based on the object type at runtime, happens in different classes 
+    - runtime (dynamic method dispatch) - if you have same method with same parameters but different implementation in different classes then it is runtime polymorphism, the compiler will decide which method to call based on the object type at runtime, happens in different classes
 
   ### abstract class  
     - in java you cannot have multiple inheritance, but you can have multiple interfaces, so if you want to achieve multiple inheritance then you can use abstract class and interface together
     - classes in java inherit from object class but interfaces does not inherit from object class
+
+
+Day 15 - 20-aug-2026 - 2 hours 
+
+### Marker interfaces - are those interfaces which does not have any method 
+
+    ```
+
+    class Camera {
+      private String cameraName;
+      private int cameraId;
+      private String cameraType;
+      private int resolution;
+      private File file1; 
+    }
+
+  class Device implements Serializable {
+    private String deviceName;
+    private int deviceId;
+    private String deviceType;
+    private int len; 
+    private int bre; 
+    Camera camera;
+  }
+    calss Hi {
+      public static void main(String[] args) {
+        
+        int x [] = {10, 20, 30, 40, 50};
+        Device device = new Device(); ? 
+      }
+    }
+
+    ```
+
+  ## instanceof discussion 
+    - in java the super class can hold the reference of sub class, but the sub class cannot hold the reference of super class,  
+    - ```
+       Device device = new TV(); (this works fine)
+       TV tv = new Device(); (this will not work)
+       // if this has to work then typecast is needed, and in java if you dont do instance of check then it will throw ClassCastException at runtime, so always do instanceof check before typecasting
+    ```
+
+    -- before java 16 
+    ```
+      if(obj instanceof String) {
+        String str = (String) obj; 
+        System.out.println(str.length());
+        System.out.println(str.toUpperCase());
+      }
+    ```
+    -- after java 16 
+    ```
+      if(obj instanceof String str) {
+        System.out.println(str.length());
+        System.out.println(str.toUpperCase());
+      }
+    ```
+
+### Stackoverflow example 
+```
+  for(int i=0; i<10; i++) {
+    System.out.println(i);
+    main(null); 
+    // this will call the main method again and again and will cause 
+    // stackoverflow error
+  }
+```
+## Errors are not recoverable 
+  - few example of errors in java - StackOverflowError, OutOfMemoryError, VirtualMachineError, NoClassDefFoundError,   NoSuchMethodError, NoSuchFieldError, IllegalAccessError, IncompatibleClassChangeError, AbstractMethodError, InstantiationError, LinkageError, ExceptionInInitializerError, UnsatisfiedLinkError, VerifyError, InternalError, UnknownError - lot of these things are not handled by application developer 
+
+## Exception are recoverable - try catch blocks 
+  - Exception in java are commonly used by developer and engineers - 
+    - you are trying to convert a string to integer 
+      - Integer num1 = Integer.parseInt("abc"); // this will throw NumberFormatException
+      - Integer num1 = Integer.parseInt("10"); // this will work fine 
+    - int [] numbers = new int [5]; 
+      - numbers[10] = 10; // this will throw ArrayIndexOutOfBoundsException
+
+
+## checked v/s unchecked Exception 
+
+### checked exception 
+  ```
+    class MyObj {}
+    --- 
+    public void method() { 
+       MyOjb obj = new MyObj();
+   try {
+     MyObj obj1 = obj.clone(); 
+    // this will throw an exception but the exception is at compile time only 
+    }catch(CloneNotSupportedException cnse){
+
+    }
+
+    --- 
+
+    FileReader fr = new FileReader("c:/myfolder/file.txt"); // this will throw FileNotFoundException
+  ```
+### unchecked exception - they dont trouble you in compile time only at runtime 
+
+```
+try {
+  Integer num1 = Integer.parseInt(sc.nextLine()); // this will throw NumberFormatException
+}catch(NumberFormatException nfe) {
+  System.out.println("Please enter a valid number");
+}
+
+-- 
+// if the class extends Exception class then it is checked exception, if the class extends RuntimeException class then it is unchecked exception
+
+class MyException extends Exception - have to handle it in compile time{
+  public MyException(String message) {
+    super(message);
+  }
+}
+
+class MyRuntimeException extends RuntimeException - no need to handle it in compile time {
+  public MyRuntimeException(String message) {
+    super(message);
+  }
+}
+
+class Calculator {
+  public int add(int a, int b) throws MyException {
+    return a + b; 
+  }
+  public int subtract(int a, int b) throws MyRuntimeException{
+    return a - b; 
+  }
+}
+
+Calculator calculator = null; // this will throw NullPointerException
+try {
+  calculator.add(10, 20); // this will not work fine
+} catch (MyException e) {
+  System.out.println("Error occurred: " + e.getMessage());
+}
+
+
+try {
+  calculator.subtract(10, 20);  
+} catch (MyRuntimeException e) {
+  System.out.println("Error occurred: " + e.getMessage());
+}
+ 
+
+
+```
