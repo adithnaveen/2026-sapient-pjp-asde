@@ -733,6 +733,8 @@ try {
       }catch(Exception3 e){}
 
 
+    - when you have your exception, if that has tobe handled it should have eligibility to throw - Just extent the class with Throwable or child of it 
+
   ```
   • Exception best practices: fail fast, wrapping, meaningful messages, logging
   • Java packages: java.lang (Object, System, Math), java.math (BigInteger, BigDecimal)

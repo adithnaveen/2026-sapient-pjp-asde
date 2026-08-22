@@ -1,6 +1,6 @@
 package com.naveen.exception;
 
-// if the class extends Exception class then it is elegible to be throwable
+// if the class extends Exception class then it is eligible to be throwable
 public class NameTooSmallException extends  Exception{
     private String detailedMessage;
 
@@ -17,5 +17,10 @@ public class NameTooSmallException extends  Exception{
         return "NameTooSmallException{" +
                 "detailedMessage='" + detailedMessage + '\'' +
                 '}';
+    }
+
+    @Override
+    public String getMessage() {
+        return "from getMessage: " + this.detailedMessage;
     }
 }
