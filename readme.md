@@ -669,3 +669,72 @@ try {
 
 
 ```
+
+# Day 16 - 22-aug-2026 
+
+  • try/catch/finally, multi-catch, try-with-resources
+  • Custom exceptions; throw vs throws; exception chaining
+
+  ```
+    // simples way of putting exception handing 
+    try {
+
+    }catch(){}
+
+
+    -- 
+    // try with multiple catch
+    try {
+      // some business logic 
+    }catch(Exception1 e) { }
+    catch(Exception2 e) { }
+    catch(Exception3 e) { }
+
+    -- 
+    // try block with catch and finally block
+    try {
+      // some business logic
+    }catch(Exception1 e) { }
+    catch(Exception2 e) { }
+    finally {
+      // some cleanup code 
+    }
+
+    // Ex: for try catch finally 
+      FileReader fr = null; 
+      try {
+         fr = new FileReader(new File("Sample.txt")); 
+        // i want to read the content from the file 
+      }
+      catch(FileNotFoundException fnfe) {
+
+      }
+      catch(IOException io) {
+
+      }
+      finally {
+        fr.close(); 
+      }
+
+      - file management 
+      - jdbc connection 
+      - socket connections etc 
+
+    -- try with only finally 
+    try {} finally {}
+
+
+      - nested try blocks 
+
+      try {
+        try {
+          try{..}catch(Exception1 e) {}
+        }catch(Exception2 e) {}
+      }catch(Exception3 e){}
+
+
+  ```
+  • Exception best practices: fail fast, wrapping, meaningful messages, logging
+  • Java packages: java.lang (Object, System, Math), java.math (BigInteger, BigDecimal)
+  • Collections (Intro): List, Set, Map — when to use each; ArrayList, HashSet, HashMap (concept-level)
+
